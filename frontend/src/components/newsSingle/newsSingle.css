@@ -1,0 +1,145 @@
+.news_sing {
+    margin: 25px 0 50px 0;
+}
+
+.news_sing__btn_back {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 25px;
+    color: var(--cl-red);  
+}
+
+.news_sing__btn_arrow {
+    transition: all 0.3s ease-in;
+}
+
+.news_sing__btn_back:hover .news_sing__btn_arrow{
+    transform: translateX(-10px);
+}
+
+.news_sing__card {
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.news_sing__card_top {
+    position: relative;
+}
+
+.news_sing__card_img {
+    display: block;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+
+    border-radius: 20px 20px 0 0;
+}
+
+.news_sing__card_gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px 20px 0 0;
+}
+
+.news_sing__card_title {
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+    color: var(--cl-white);
+
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    padding-left: 20px;
+}
+
+.news_sing__card_bottom {
+    padding: 15px;
+}
+
+.news_sing__card_info {
+    display: flex;
+    gap: 30px ;
+    margin-bottom: 24px;
+}
+
+.news_sing__card_calendar, .news_sing__card_cat {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.news_sing__card_cat {
+    color: var(--cl-red);
+}
+
+.news_sing__card_calendar {
+    color: var(--cl-grey);
+}
+
+.news_sing__card_text p {
+    color: var(--cl-grey-2);
+    white-space: pre-wrap;
+}
+
+.news_sing__btn_back {
+    margin: 25px 0;
+    font-weight: 700;
+}
+
+.news_err__wrap {
+    width: 100%;
+    height: 52vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.news_err__text {
+    font-size: 42px;
+    line-height: 56px;
+    font-weight: 900;
+
+    color: var(--cl-red);
+}
+
+
+@media (max-width: 768px) {
+    .news_sing__card_img {
+        height: 400px;
+    }
+}
+
+@media (max-width: 425px) {
+    .news_sing__card_img {
+        height: 350px;
+    }
+
+    .news_sing__card_title {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .news_sing__card_text p {
+        font-size: 14px;
+    }
+
+    .news_sing__card_calendar {
+        font-size: 13px;
+    }
+
+    .news_sing__card_cat {
+        font-size: 13px;
+    }
+
+}

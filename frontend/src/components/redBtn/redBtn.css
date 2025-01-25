@@ -1,0 +1,17 @@
+.red_btn {
+    display: inline-block;
+    background-color: var(--cl-red);
+    color: var(--cl-white);
+    border-radius: 20px;
+    padding: 5px 15px;
+
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@media (max-width: 450px) {
+    .red_btn {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}

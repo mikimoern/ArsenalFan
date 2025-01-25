@@ -1,0 +1,51 @@
+.table__wraper {
+    margin-bottom: 25px;
+}
+
+.table__league {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid var(--background-1);
+}
+
+.column-title {
+    background-color: var(--background-1);
+    color: var(--cl-white);
+}
+
+.column-title th {
+    padding: 10px;
+    text-align: center;
+}
+
+.rows-title {
+    border-bottom: 1px solid var(--background-1);
+    transition: all 0.3s ease-in;  
+}
+
+.rows-title:hover {
+    background-color: var(--cl-grey);
+    cursor: pointer;
+}
+
+.rows-title td{
+    text-align: center;
+    font-size: 14px;
+    padding: 4px 0;
+}   
+
+.table__team-info {
+  display: flex;
+  align-items: center;
+}
+
+.highlight-red {
+  background-color: var(--cl-red);
+  color: var(--cl-white); 
+}
+
+@media (max-width: 450px) {
+    .column-title th {
+        padding: 5px;
+    }
+}

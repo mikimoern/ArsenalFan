@@ -1,0 +1,125 @@
+.players__wrap {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 25px 0;
+}
+
+.players_pos {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+}
+
+.player_card {
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+
+    transition: transform 0.3s ease-in;
+}
+
+.player_card:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.player_card__portrait {
+    width: 320px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    display: block;
+}
+
+.player_card__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px;
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid var(--outline-2);
+}
+
+.player_card__name {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 900;
+}
+
+.player_card__number {
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 900;
+
+    color: var(--cl-red);
+}
+
+.player_card__stats {
+    margin: 15px;
+}
+
+.player_card__stats_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 0;
+}
+
+.player_card__stats_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player_card__stats_num {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 900;
+}
+.player_card__stats_title {
+    color: var(--cl-grey);
+}
+
+
+@media (max-width: 768px) {
+    .players__wrap {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .player_card__portrait {
+        width: 100%;
+    }
+
+    .player_card__name {
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: 700;
+    }
+
+    .player_card__number {
+        font-size: 26px;
+        line-height: 34px;
+        font-weight: 700;
+        color: var(--cl-red);
+    }
+
+    .player_card__stats_num {
+        font-size: 22px;
+        line-height: 32px;
+        font-weight: 700;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .players__wrap {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}

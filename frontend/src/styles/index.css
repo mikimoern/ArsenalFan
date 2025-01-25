@@ -1,0 +1,18 @@
+:root {
+  /* colors */
+  --cl-red: #e30613;
+  --cl-white: #f6f6f6;
+  --cl-grey: #bdbdbd;
+  --cl-grey_2: #707070;
+  --cl-black: #000000;
+
+  --background-1: #151925;
+  --outline: #363d4a;
+
+}
+
+.container {
+  max-width: 1430px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
